@@ -21,4 +21,4 @@ jobs:
       - name: Output time set in the container
         run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
 
-      - run: echo "## Hello world! :rocket: ### ${{ steps.hello-action.outputs.time }}" >> $GITHUB_STEP_SUMMARY
+      - run: echo "## Hello world! ${{ steps.hello-action.outputs.time }} :rocket:" >> $GITHUB_STEP_SUMMARY
