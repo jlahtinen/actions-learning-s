@@ -1,11 +1,11 @@
-name: demo
+name: "Starter"
+
 on: [workflow_dispatch]
 
 jobs:
-  first:
+  first_job:
     runs-on: ubuntu-latest
-
+    name: "First job"
     steps:
-      - name: say hello
-        run: echo "hello world"
-        
+      - name: "Say hello"
+        run: "echo 'Hello'"
